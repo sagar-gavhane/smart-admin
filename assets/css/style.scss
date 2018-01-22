@@ -1,0 +1,77 @@
+@import 'scss/ben';
+@import 'scss/parsley';
+
+.container{
+    width: 970px !important;
+}
+
+// no gutter for extra small device
+.no-gutter-xs{
+    margin-left: 0px !important;
+    margin-right: 0px !important; 
+}
+
+// navbar radius remove
+.navbar{
+    border-radius: 0px;
+}
+
+// padding-content due to navbar-fixed-top
+.padding-content{
+    padding-top: 80px;
+}
+
+// page heading
+.page-heading{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #bbb;
+    @include e(heading-text){
+        
+    }
+}
+
+// label required star
+.label-required:after {
+    content: "*";
+    color: #e71d36;
+    font-weight: 700;
+    padding-left: 5px;
+}
+
+// label bold
+form label{
+    font-weight: bold;
+}
+
+// login page stylesheet
+.login-block{
+    margin-top: 25%;
+    @include e(login-heading){
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #bbb;
+    }
+}
+@media screen and (min-width: 768px){
+    .login-block{
+        margin-top: 50%;
+    }
+}
+
+.search-form-block{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+// audio page stylesheet
+.audio-list-block{
+    margin-top: 15px;
+}
+
+.top-buttons{
+    margin-bottom: 25px;
+}
+.fa-breadcrumb{
+    padding-right: 5px;
+}
